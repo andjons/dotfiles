@@ -26,6 +26,9 @@ filetype plugin indent on
 
 let mapleader = ","
 
+set guioptions=c
+set guifont=Monospace\ 11
+
 set encoding=utf-8
 "set nobackup
 "set nowritebackup
