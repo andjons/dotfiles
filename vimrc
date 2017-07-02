@@ -27,9 +27,13 @@ filetype plugin indent on
 let mapleader = ","
 
 set encoding=utf-8
-set nobackup
-set nowritebackup
-set noswapfile
+"set nobackup
+"set nowritebackup
+"set noswapfile
+
+set backupdir=~/.vim/tmp,.
+set directory=~/.vim/tmp,.
+
 set incsearch
 set shiftwidth=2
 set tabstop=2
