@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -41,6 +42,7 @@ set incsearch
 set shiftwidth=2
 set tabstop=2
 set autoindent
+set showmatch
 
 syntax on
 
