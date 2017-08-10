@@ -20,6 +20,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'OmniSharp/omnisharp-vim'
 call vundle#end()
 
@@ -42,6 +43,7 @@ set incsearch
 set shiftwidth=2
 set tabstop=2
 set autoindent
+set showmatch
 
 syntax on
 
