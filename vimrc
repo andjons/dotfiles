@@ -28,13 +28,9 @@ filetype plugin indent on
 let mapleader = ","
 
 set guioptions=c
-set guifont=Monospace\ 11
+set guifont=Hack\ 11
 
 set encoding=utf-8
-"set nobackup
-"set nowritebackup
-"set noswapfile
-
 set backupdir=~/.vim/tmp,.
 set directory=~/.vim/tmp,.
 
@@ -71,14 +67,14 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set shiftwidth=2 |
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
+"set list listchars=tab:»·,trail:·,nbsp:·
 
 " Use one space, not two, after punctuation.
 set nojoinspaces
 
 " Make it obvious where 80 characters is
 set textwidth=80
-set colorcolumn=+1
+"set colorcolumn=+1
 
 " Numbers
 set number
