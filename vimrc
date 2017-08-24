@@ -21,6 +21,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'OmniSharp/omnisharp-vim'
 call vundle#end()
 
 filetype plugin indent on
