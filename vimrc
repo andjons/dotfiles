@@ -23,6 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'jlanzarotta/bufexplorer'
 call vundle#end()
 
 filetype plugin indent on
@@ -41,8 +42,17 @@ set shiftwidth=2
 set tabstop=2
 set autoindent
 set showmatch
+set nohlsearch
 
 syntax on
+
+" Syntastic settings
+let g:syntastic_check_on_open = 0
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_javascript_checkers = ['eslint']
+
+" CtrlP ignores
+set wildignore+=*/node_modules/*
 
 " Ignore files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
@@ -63,10 +73,10 @@ au BufNewFile,BufRead *.py
 " Flag unnecessary whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js,*.html,*.css
     \ set tabstop=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2 |
+    \ set shiftwidth=2
 
 " Display extra whitespace
 "set list listchars=tab:»·,trail:·,nbsp:·
